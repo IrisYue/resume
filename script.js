@@ -7,6 +7,7 @@ var Resume = function(window, document) {
 
     var scroll = function() {
         var temp;
+        console.info(window.innerWidth);
         if(window.innerWidth < 650 || start == document.documentElement.scrollTop + document.body.scrollTop) {
             window.location.hash = hash;
             start = dest = NaN;
